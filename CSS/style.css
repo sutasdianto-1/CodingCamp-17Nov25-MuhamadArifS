@@ -1,0 +1,92 @@
+header {
+    background-color: #f2f2f2;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Kunci: Mengatur .logo sebagai flex container */
+.logo {
+    display: flex; 
+    align-items: center; /* Menyusun logo dan teks di tengah vertikal */
+    gap: 10px; /* Jarak antara logo dan tulisan */
+}
+
+.logo-img {
+    height: 75px; /*Atur ukuran tinggi logo */
+    width: 75px;  /*Atur ukuran lebar logo */
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+}
+
+/*Styling untuk tulisan di samping logo */
+.logo h1 {
+    font-size: 24px; 
+    color: #333;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+#bg-video {
+    filter: brightness(60%);
+}
+
+.hero-section {
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+} 
+
+#our-profile-page {
+    background-image: url("../images/background.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Contact {
+    background-image: url("../images/cafe.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* untuk responsive di hp */
+@media (max-width: 480px) {
+    .logo-img {
+        height: 55px;
+        width: 55px;
+    }
+    .logo h1 {
+        font-size: 18px;
+    }
+    nav a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #nameModal .w-80 {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+  .profile-section {
+      background-position: top;
+  }
+}
